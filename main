@@ -1,0 +1,47 @@
+// SkillAxis Landing Page - React + Tailwind CSS
+
+import React from 'react';
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-black via-teal-800 to-blue-700 text-white font-sans">
+      <header className="p-6 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold">SkillAxis</h1>
+        <p className="mt-4 text-xl md:text-2xl">Your AI-powered career guide to learn the right skill and start earning from home.</p>
+        <a href="#waitlist" className="mt-6 inline-block bg-white text-black font-semibold px-6 py-3 rounded-xl hover:bg-gray-200 transition">Join Waitlist</a>
+      </header>
+
+      <section className="p-8 md:p-16 bg-opacity-20 backdrop-blur-sm">
+        <h2 className="text-3xl font-semibold mb-4">🎯 The Problem</h2>
+        <p className="text-lg">Most students in Bangladesh feel clueless about their future. They don't know which skill to learn, or how to get a job or freelance gig from home.</p>
+      </section>
+
+      <section className="p-8 md:p-16">
+        <h2 className="text-3xl font-semibold mb-4">🚀 The SkillAxis Solution</h2>
+        <p className="text-lg">SkillAxis is an AI-powered platform that analyzes your interests, goals, and education to suggest the perfect career — then helps you learn and earn through a personalized skill roadmap.</p>
+      </section>
+
+      <section className="p-8 md:p-16 bg-opacity-20 backdrop-blur-sm">
+        <h2 className="text-3xl font-semibold mb-4">🛠️ How It Works</h2>
+        <ul className="space-y-4 text-lg">
+          <li><strong>1.</strong> Tell your story (interests, goals, background)</li>
+          <li><strong>2.</strong> SkillAxis AI finds your ideal career</li>
+          <li><strong>3.</strong> Follow a daily mini-roadmap to learn and earn</li>
+        </ul>
+      </section>
+
+      <section id="waitlist" className="p-8 md:p-16 text-center">
+        <h2 className="text-3xl font-semibold mb-4">🔥 Be the First to Join</h2>
+        <p className="text-lg mb-6">Enter your email to get early access when we launch!</p>
+        <form action="https://formspree.io/f/mnnpyvjz" method="POST" className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <input type="email" name="email" placeholder="Your email address" required className="px-4 py-2 rounded-lg text-black w-72" />
+          <button type="submit" className="bg-white text-black font-semibold px-6 py-2 rounded-xl hover:bg-gray-300 transition">Join Waitlist</button>
+        </form>
+      </section>
+
+      <footer className="p-6 text-center text-sm opacity-70">
+        &copy; 2025 SkillAxis. Built with ❤️ by your AI partner.
+      </footer>
+    </div>
+  );
+}
